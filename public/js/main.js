@@ -16,8 +16,11 @@ if(value.Roomcode){
     roomcode = Math.random().toString(36).substring(2,10);
 }
 
-console.log(username)
-console.log(roomcode)
+// console.log(username)
+// console.log(roomcode)
+
+let roomcodeDiv = document.getElementById('roomCode')
+roomcodeDiv.innerHTML = `Room Code: ${roomcode}`
 
 const socket = io()
 
